@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carta Inolvidable</title>
+<title>Carta Especial</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     margin:0;
     padding:0;
-    background:radial-gradient(circle at center,#2a0d45 0%,#14051f 60%,#0a0312 100%);
+    background:radial-gradient(circle at center,#2b0f46,#12051f 70%);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -25,143 +25,105 @@ body{
     width:95%;
     max-width:1100px;
     margin-top:40px;
-    border-radius:30px;
+    border-radius:25px;
     overflow:hidden;
-    box-shadow:0 0 60px rgba(162,0,255,0.4);
+    box-shadow:0 0 40px rgba(160,0,255,0.4);
 }
 
 .video-container iframe{
     width:100%;
-    height:480px;
+    height:500px;
     border:none;
 }
 
 /* CARTA */
 .carta{
     margin:80px 20px;
-    padding:90px 80px;
+    padding:100px 90px;
     max-width:1100px;
     width:90%;
-    background:linear-gradient(160deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));
-    border-radius:40px;
-    backdrop-filter:blur(20px);
-    position:relative;
-    box-shadow:
-        0 0 80px rgba(200,0,255,0.2),
-        inset 0 0 100px rgba(255,255,255,0.05);
-}
-
-/* BORDE ELEGANTE ANIMADO */
-.carta::before{
-    content:"";
-    position:absolute;
-    inset:-5px;
-    border-radius:45px;
-    background:linear-gradient(120deg,#a100ff,#6f00ff,#b517ff,#7209b7,#a100ff);
-    background-size:300% 300%;
-    animation:borde 10s linear infinite;
-    filter:blur(25px);
-    opacity:0.35;
-    z-index:-1;
-}
-
-@keyframes borde{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
-}
-
-/* TEXTO PRINCIPAL */
-.texto{
-    min-height:500px;
-    font-size:26px;  /* MÁS GRANDE */
-    line-height:2;
-    font-family:'Cormorant Garamond',serif;
-    letter-spacing:0.5px;
-}
-
-/* PALABRA NEON MORADO ESPECIAL */
-.neon-morado{
-    font-size:75px;
+    background:rgba(255,255,255,0.06);
+    border-radius:35px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 60px rgba(180,0,255,0.25);
     text-align:center;
-    margin:80px 0 50px;
-    font-weight:700;
+}
+
+/* TEXTO GRANDE */
+.texto{
+    font-family:'Cormorant Garamond',serif;
+    font-size:32px;   /* MÁS GRANDE */
+    line-height:2.1;
+    min-height:500px;
+}
+
+/* BOTÓN */
+.boton{
+    margin-top:40px;
+    padding:18px 40px;
+    font-size:20px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:linear-gradient(90deg,#a100ff,#ff00aa);
+    color:white;
+    font-weight:600;
+    box-shadow:0 0 20px rgba(255,0,200,0.6);
+    transition:0.3s;
+}
+
+.boton:hover{
+    transform:scale(1.05);
+}
+
+/* FRASES OCULTAS */
+.frases{
+    display:none;
+    margin-top:60px;
+}
+
+/* PALABRA NEON MORADO */
+.neon-morado{
+    font-size:80px;
+    margin-bottom:40px;
     color:#d0a2ff;
     text-shadow:
         0 0 10px #c77dff,
-        0 0 25px #a100ff,
-        0 0 50px #7b2cbf,
-        0 0 90px #5a189a;
+        0 0 30px #a100ff,
+        0 0 60px #6f00ff;
 }
 
 /* TE AMO MORADO INTENSO */
 .neon-teamo{
-    font-size:60px;
-    text-align:center;
-    margin-top:40px;
-    color:#bb6bff;
+    font-size:65px;
+    margin:40px 0;
+    color:#b84dff;
     text-shadow:
-        0 0 10px #a100ff,
-        0 0 30px #8e00ff,
-        0 0 60px #6f00ff,
-        0 0 100px #4b0082;
+        0 0 15px #a100ff,
+        0 0 40px #7b2cbf,
+        0 0 70px #4b0082;
 }
 
-/* PROMESA DORADA CON BRILLOS */
+/* PROMESA DORADA */
 .neon-dorado{
-    font-size:55px;
-    text-align:center;
-    margin-top:50px;
+    font-size:60px;
+    margin:40px 0;
     color:#ffd700;
     text-shadow:
         0 0 10px #fff176,
-        0 0 30px #ffd700,
-        0 0 60px #ffc400,
-        0 0 100px #ffb300;
-    position:relative;
+        0 0 35px #ffc400,
+        0 0 60px #ffb300;
 }
 
-.neon-dorado::after{
-    content:" ✨";
-    animation:brillo 2s infinite alternate;
-}
-
-@keyframes brillo{
-    from{opacity:0.6; transform:scale(1);}
-    to{opacity:1; transform:scale(1.15);}
-}
-
-/* FRASE FINAL ROSADO INTENSO */
+/* FRASE FINAL ROSADA */
 .neon-final{
-    font-size:50px;
-    text-align:center;
-    margin-top:70px;
+    font-size:55px;
+    margin-top:50px;
     color:#ff4dd2;
     text-shadow:
         0 0 10px #ff00cc,
-        0 0 30px #ff00aa,
-        0 0 60px #ff0099,
-        0 0 100px #ff007f;
-}
-
-/* DETALLES LUMINOSOS SUAVES */
-.luz{
-    position:absolute;
-    width:8px;
-    height:8px;
-    background:white;
-    border-radius:50%;
-    opacity:0.5;
-    animation:flotar 8s infinite alternate;
-}
-
-.luz:nth-child(1){top:40px;left:80px;}
-.luz:nth-child(2){bottom:60px;right:90px;}
-.luz:nth-child(3){top:100px;right:140px;}
-
-@keyframes flotar{
-    from{transform:translateY(0);}
-    to{transform:translateY(-20px);}
+        0 0 35px #ff0099,
+        0 0 60px #ff007f;
 }
 
 </style>
@@ -175,10 +137,7 @@ body{
 
 <div class="carta">
 
-<div class="luz"></div>
-<div class="luz"></div>
-<div class="luz"></div>
-
+<div id="contenido">
 <div class="texto">
 <div class="neon-morado">
 <strong>MI AMOR, PRECIOSA, MI NIÑA BONITA</strong>
@@ -260,8 +219,12 @@ El hombre que te ama con el alma entera. 💖 </p>
   <p><strong>JUAN KALETH MENDOZA PRIMERA 💜</strong></p>
 </div>
 
+<button class="boton" onclick="mostrarFrases()">Descubrir lo que siento por ti</button>
+</div>
 
-<div class="neon-amor">
+<div class="frases" id="frases">
+
+<div class="neon-teamo">
 "Mi amor, aunque la distancia nos separe en este instante y no puedo estar a tu lado como desearía, quiero que sepas que cada latido de mi corazón está contigo, enviándote toda la fuerza y el amor que tengo. Te amo más allá de lo infinito, y ese amor es un faro que ilumina incluso los días más oscuros.Sé que te sientes mal y que esta enfermedad puede parecer abrumadora, pero quiero que recuerdes que eres una luchadora increíble. Tu valentía y tu espíritu fuerte son una inspiración para mí y para todos los que te rodean. Imagina que estoy allí contigo, sosteniéndote la mano, compartiendo cada momento, cada lágrima y cada rayo de esperanza. Aunque no pueda estar físicamente, mi amor te envuelve como un cálido abrazo, y deseo que sientas mi presencia en cada rincón de tu ser.Visualiza nuestro futuro juntos: esos días llenos de risas, aventuras y sueños compartidos. Cada día que pasa es un paso más hacia la recuperación, y estoy aquí, apoyándote en cada uno de esos pasos. Quiero que sepas que estoy contigo en espíritu, enviándote energía positiva y amor incondicional. Eres el sol que ilumina mi vida, y no hay nada que desee más que verte sonreír de nuevo.Permítete sentir lo que necesites sentir, y recuerda que está bien pedir ayuda. Estoy aquí para ti, siempre. Aunque no pueda estar a tu lado ahora, mi corazón está contigo, y cada pensamiento que tengo es una oración por tu bienestar. Te amo con todo mi ser, y espero con ansias el día en que podamos estar juntos de nuevo, celebrando la vida y el amor que compartimos. Cuídate mucho, mi vida, y recuerda que estoy contigo en cada paso de este camino."
 <p><strong>💜 TE AMO MUCHÍSIMO VALERIA PETRO VILLAZON, MI VIDA ENTERA 💜</strong></p>
 </div>
@@ -275,6 +238,15 @@ El hombre que te ama con el alma entera. 💖 </p>
 </div>
 
 </div>
+
+</div>
+
+<script>
+function mostrarFrases(){
+    document.getElementById("contenido").style.display="none";
+    document.getElementById("frases").style.display="block";
+}
+</script>
 
 </body>
 </html>
