@@ -5,184 +5,181 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Carta Inolvidable</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
     margin:0;
     padding:0;
-    background:radial-gradient(circle at top,#2d0b45 0%,#14071f 50%,#0a0412 100%);
-    font-family:'Montserrat',sans-serif;
+    background:radial-gradient(circle at center,#2a0d45 0%,#14051f 60%,#0a0312 100%);
     display:flex;
     flex-direction:column;
     align-items:center;
+    font-family:'Montserrat',sans-serif;
     color:white;
-    overflow-x:hidden;
 }
 
-/* VIDEO SUPERIOR */
-.video-box{
-    width:100%;
-    max-width:950px;
+/* VIDEO */
+.video-container{
+    width:95%;
+    max-width:1100px;
     margin-top:40px;
-    border-radius:25px;
+    border-radius:30px;
     overflow:hidden;
-    box-shadow:0 0 50px rgba(255,0,255,0.25);
+    box-shadow:0 0 60px rgba(162,0,255,0.4);
 }
 
-.video-box iframe{
+.video-container iframe{
     width:100%;
-    height:420px;
+    height:480px;
     border:none;
 }
 
-/* CONTENEDOR CARTA */
+/* CARTA */
 .carta{
-    position:relative;
     margin:80px 20px;
-    padding:70px 60px;
-    max-width:900px;
-    background:linear-gradient(145deg,rgba(255,255,255,0.07),rgba(255,255,255,0.02));
-    border-radius:35px;
-    backdrop-filter:blur(18px);
+    padding:90px 80px;
+    max-width:1100px;
+    width:90%;
+    background:linear-gradient(160deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02));
+    border-radius:40px;
+    backdrop-filter:blur(20px);
+    position:relative;
     box-shadow:
-        0 0 60px rgba(255,0,200,0.15),
-        inset 0 0 80px rgba(255,255,255,0.04);
+        0 0 80px rgba(200,0,255,0.2),
+        inset 0 0 100px rgba(255,255,255,0.05);
 }
 
-/* BORDE LUMINOSO SUAVE */
+/* BORDE ELEGANTE ANIMADO */
 .carta::before{
     content:"";
     position:absolute;
-    inset:-4px;
-    border-radius:40px;
-    background:linear-gradient(90deg,#ff00cc,#8a2be2,#ff4da6,#ffd700,#ff00cc);
+    inset:-5px;
+    border-radius:45px;
+    background:linear-gradient(120deg,#a100ff,#6f00ff,#b517ff,#7209b7,#a100ff);
     background-size:300% 300%;
-    z-index:-1;
-    animation:marco 8s linear infinite;
-    filter:blur(20px);
+    animation:borde 10s linear infinite;
+    filter:blur(25px);
     opacity:0.35;
+    z-index:-1;
 }
 
-@keyframes marco{
+@keyframes borde{
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
 }
 
-/* ÁREA TEXTO */
+/* TEXTO PRINCIPAL */
 .texto{
-    min-height:420px;
-    font-size:20px;
-    line-height:1.9;
-    font-family:'Playfair Display',serif;
+    min-height:500px;
+    font-size:26px;  /* MÁS GRANDE */
+    line-height:2;
+    font-family:'Cormorant Garamond',serif;
+    letter-spacing:0.5px;
 }
 
-/* NEON MORADO ESPECIAL */
+/* PALABRA NEON MORADO ESPECIAL */
 .neon-morado{
+    font-size:75px;
+    text-align:center;
+    margin:80px 0 50px;
+    font-weight:700;
+    color:#d0a2ff;
+    text-shadow:
+        0 0 10px #c77dff,
+        0 0 25px #a100ff,
+        0 0 50px #7b2cbf,
+        0 0 90px #5a189a;
+}
+
+/* TE AMO MORADO INTENSO */
+.neon-teamo{
     font-size:60px;
     text-align:center;
-    font-weight:700;
-    margin:70px 0 40px;
-    color:#c77dff;
-    text-shadow:
-        0 0 8px #b84dff,
-        0 0 20px #9333ea,
-        0 0 40px #7b2cbf,
-        0 0 70px #5a189a;
-}
-
-/* TE AMO – MORADO A ROJO */
-.neon-amor{
-    font-size:48px;
-    text-align:center;
     margin-top:40px;
-    background:linear-gradient(90deg,#a100ff,#ff003c);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+    color:#bb6bff;
     text-shadow:
-        0 0 10px rgba(255,0,120,0.7),
-        0 0 25px rgba(255,0,80,0.6),
-        0 0 45px rgba(200,0,255,0.5);
+        0 0 10px #a100ff,
+        0 0 30px #8e00ff,
+        0 0 60px #6f00ff,
+        0 0 100px #4b0082;
 }
 
-/* PROMESA DORADA CON DESTELLO */
+/* PROMESA DORADA CON BRILLOS */
 .neon-dorado{
-    font-size:46px;
+    font-size:55px;
     text-align:center;
-    margin-top:45px;
+    margin-top:50px;
     color:#ffd700;
     text-shadow:
-        0 0 8px #fff176,
-        0 0 25px #ffd700,
-        0 0 45px #ffc400,
-        0 0 70px #ffb300;
+        0 0 10px #fff176,
+        0 0 30px #ffd700,
+        0 0 60px #ffc400,
+        0 0 100px #ffb300;
     position:relative;
 }
 
 .neon-dorado::after{
-    content:"✨";
-    position:absolute;
-    right:-35px;
-    top:-10px;
-    font-size:28px;
-    animation:destello 2s infinite alternate;
+    content:" ✨";
+    animation:brillo 2s infinite alternate;
 }
 
-@keyframes destello{
-    from{opacity:0.4; transform:scale(0.9);}
-    to{opacity:1; transform:scale(1.2);}
+@keyframes brillo{
+    from{opacity:0.6; transform:scale(1);}
+    to{opacity:1; transform:scale(1.15);}
 }
 
 /* FRASE FINAL ROSADO INTENSO */
 .neon-final{
-    font-size:42px;
+    font-size:50px;
     text-align:center;
-    margin-top:60px;
-    color:#ff66cc;
+    margin-top:70px;
+    color:#ff4dd2;
     text-shadow:
-        0 0 8px #ff33bb,
-        0 0 20px #ff00aa,
-        0 0 40px #ff0099,
-        0 0 70px #ff007f;
+        0 0 10px #ff00cc,
+        0 0 30px #ff00aa,
+        0 0 60px #ff0099,
+        0 0 100px #ff007f;
 }
 
-/* DETALLES DECORATIVOS */
-.brillo{
+/* DETALLES LUMINOSOS SUAVES */
+.luz{
     position:absolute;
-    width:6px;
-    height:6px;
+    width:8px;
+    height:8px;
     background:white;
     border-radius:50%;
     opacity:0.5;
-    animation:flotar 6s infinite alternate;
+    animation:flotar 8s infinite alternate;
 }
 
-.brillo:nth-child(1){top:30px;left:50px;}
-.brillo:nth-child(2){bottom:40px;right:70px;}
-.brillo:nth-child(3){top:60px;right:120px;}
+.luz:nth-child(1){top:40px;left:80px;}
+.luz:nth-child(2){bottom:60px;right:90px;}
+.luz:nth-child(3){top:100px;right:140px;}
 
 @keyframes flotar{
     from{transform:translateY(0);}
-    to{transform:translateY(-15px);}
+    to{transform:translateY(-20px);}
 }
 
 </style>
 </head>
+
 <body>
 
-<div class="video-box">
+<div class="video-container">
 <iframe src="https://www.youtube.com/embed/JMWziXLbuNA" allowfullscreen></iframe>
 </div>
 
 <div class="carta">
 
-<div class="brillo"></div>
-<div class="brillo"></div>
-<div class="brillo"></div>
+<div class="luz"></div>
+<div class="luz"></div>
+<div class="luz"></div>
 
-<div class="texto-carta">
+<div class="texto">
 <div class="neon-morado">
 <strong>MI AMOR, PRECIOSA, MI NIÑA BONITA</strong>
 </div>
@@ -275,6 +272,8 @@ El hombre que te ama con el alma entera. 💖 </p>
 
 <div class="neon-final">
 "En cada rincón de mi ser, te llevo conmigo, y aunque la distancia nos separe en este momento, quiero que sepas que mi amor por ti es un faro eterno que nunca se apaga, iluminando incluso los días más oscuros. Eres el sueño que enciende mis noches y la razón por la que cada amanecer cobra vida. Cuando miro hacia el futuro, vislumbro un camino vibrante y lleno de posibilidades, donde cada paso que damos juntos está impregnado de la magia de nuestra conexión única, tejida con hilos de amor y esperanza.Así que, mientras enfrentas este desafío, quiero que sientas en lo más profundo de tu corazón que mi amor es un abrazo eterno que te envuelve, un susurro de aliento que te acompaña en cada instante. Te prometo que estaré aquí, firme y constante, como un roble que resiste las tormentas, esperando con ansias el día en que podamos compartir cada rayo de sol, cada risa y cada momento que hace que nuestra historia sea tan especial.Aunque ahora pueda parecer que los días son largos y las noches solitarias, quiero que sepas que mi amor por ti es un lazo inquebrantable, un hilo dorado que nos une a través del tiempo y el espacio. Te amo con una pasión que no conoce límites, un amor que florece como un jardín eterno, lleno de colores y fragancias que solo tú puedes evocar.Eres mi musa, mi inspiración, y cada latido de mi corazón lleva tu nombre grabado en él. En este viaje llamado vida, tú eres la razón por la que mi corazón late con tanta fuerza y alegría. Te prometo que siempre estaré aquí, amándote con cada latido, cada suspiro, y cada pensamiento que tengo. Porque en este vasto universo, eres mi todo, y juntos, escribiremos una historia de amor que será recordada por siempre, un relato de dos almas que se encontraron y decidieron amarse sin límites, hoy, mañana y por toda la eternidad."
+</div>
+
 </div>
 
 </body>
