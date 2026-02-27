@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carta Especial</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#1a0f2e,#2a1740,#120a20);
+    font-family:'Montserrat',sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+}
+
+/* VIDEO */
+.video-container{
+    width:100%;
+    max-width:900px;
+    margin-top:40px;
+    box-shadow:0 0 40px rgba(255,0,255,0.2);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.video-container iframe{
+    width:100%;
+    height:400px;
+    border:none;
+}
+
+/* CARTA */
+.carta{
+    margin:60px 20px;
+    padding:60px 50px;
+    max-width:850px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    box-shadow:
+        0 0 40px rgba(255,0,200,0.15),
+        inset 0 0 60px rgba(255,255,255,0.03);
+    position:relative;
+}
+
+/* DETALLES DECORATIVOS */
+.carta::before{
+    content:"";
+    position:absolute;
+    top:-3px;
+    left:-3px;
+    right:-3px;
+    bottom:-3px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#ff00cc,#8a2be2,#ff1493);
+    z-index:-1;
+    filter:blur(25px);
+    opacity:0.25;
+}
+
+/* ÁREA PARA TU TEXTO */
+.texto-carta{
+    min-height:400px;
+    font-size:20px;
+    line-height:1.9;
+    font-family:'Playfair Display',serif;
+}
+
+/* NEON MORADO ESPECIAL (normal font elegante) */
+.neon-morado{
+    font-size:55px;
+    font-weight:700;
+    text-align:center;
+    margin:60px 0 30px;
+    color:#d59bff;
+    text-shadow:
+        0 0 5px #b84dff,
+        0 0 10px #a020f0,
+        0 0 20px #8a2be2,
+        0 0 40px #6a0dad;
+}
+
+/* NEON ROSADO FINAL */
+.neon-rosado{
+    font-size:40px;
+    text-align:center;
+    margin-top:60px;
+    color:#ff7edb;
+    text-shadow:
+        0 0 5px #ff4dd2,
+        0 0 10px #ff1ac6,
+        0 0 20px #ff00bf,
+        0 0 40px #ff00aa;
+}
+
+/* NEON MORADO-ROJO (TE AMO) */
+.neon-amor{
+    font-size:48px;
+    text-align:center;
+    margin-top:40px;
+    color:#ff4d88;
+    text-shadow:
+        0 0 5px #ff1a75,
+        0 0 15px #e60073,
+        0 0 25px #cc0066,
+        0 0 40px #99004d;
+}
+
+/* NEON DORADO CON BRILLO */
+.neon-dorado{
+    font-size:45px;
+    text-align:center;
+    margin-top:40px;
+    color:#ffd700;
+    position:relative;
+    text-shadow:
+        0 0 5px #ffea00,
+        0 0 15px #ffd700,
+        0 0 25px #ffcc00,
+        0 0 40px #ffb700;
+    animation:brillo 2.5s infinite alternate;
+}
+
+@keyframes brillo{
+    from{
+        text-shadow:
+            0 0 5px #ffea00,
+            0 0 15px #ffd700,
+            0 0 25px #ffcc00,
+            0 0 40px #ffb700;
+    }
+    to{
+        text-shadow:
+            0 0 10px #fff176,
+            0 0 25px #ffd700,
+            0 0 40px #ffc400,
+            0 0 60px #ffb300;
+    }
+}
+
+/* CORAZONES SUAVES DECORATIVOS */
+.corazon{
+    position:absolute;
+    font-size:20px;
+    color:rgba(255,105,180,0.2);
+}
+
+.corazon:nth-child(1){top:20px;left:20px;}
+.corazon:nth-child(2){top:20px;right:20px;}
+.corazon:nth-child(3){bottom:20px;left:20px;}
+.corazon:nth-child(4){bottom:20px;right:20px;}
+
+</style>
+</head>
+
+<body>
+
+<div class="video-container">
+<iframe src="https://www.youtube.com/embed/JMWziXLbuNA" allowfullscreen></iframe>
+</div>
+
+<div class="carta">
+
+<div class="corazon">❤</div>
+<div class="corazon">❤</div>
+<div class="corazon">❤</div>
+<div class="corazon">❤</div>
+
+<div class="texto-carta">
+<div class="neon-morado">
+<strong>MI AMOR, PRECIOSA, MI NIÑA BONITA</strong>
+</div>
+  <P>Hoy es jueves 26 de febrero de 2026 por la noche… y aunque el mundo esté en silencio, aunque las luces se apaguen poco a poco y todo parezca descansar, mi corazón está más despierto que nunca pensando en ti. Pensando en cómo te sientes, en esa gripa molesta que te roba energía, en ese dolor de cabeza que te incomoda, y en lo mucho que daría por estar a tu lado ahora mismo, cuidándote como el tesoro que eres.
+
+Desde que supe que no te encuentras bien, he estado pensando en ti constantemente. Cada pequeño detalle de tu día a día se ha convertido en un refugio para mi mente. Recuerdo cómo solías reírte de las cosas más simples, cómo tus ojos brillaban cuando hablabas de tus sueños y aspiraciones. Esa luz que irradias es algo que me llena de alegría, y hoy, al saber que no te sientes bien, mi corazón se siente pesado. Quiero que sepas que estoy aquí, aunque la distancia nos separe.
+
+Si pudiera, estaría ahí acomodando tu almohada, dándote besitos suaves en la frente, abrazándote con cuidado para que descanses mejor. Te haría un té caliente, te arroparía hasta el cuello y me quedaría mirándote en silencio, agradeciendo al universo por permitirme amar a alguien tan maravillosa como tú. Imagino la calidez de tu cuerpo contra el mío, el suave ritmo de tu respiración mientras te relajas. En esos momentos, el mundo exterior se desvanecería y solo existiríamos tú y yo, compartiendo un instante de paz.
+
+Me duele saber que te sientes mal, pero incluso en medio de tu enfermedad sigues siendo la mujer más hermosa que mis ojos han visto. Porque tu belleza no depende de un día perfecto ni de una sonrisa sin cansancio. Tu belleza está en tu esencia, en tu ternura, en tu forma de hablar, en tu manera de hacerme sentir amado incluso cuando tú eres quien necesita cuidados. <strong>Tu fortaleza y tu vulnerabilidad son dos caras de la misma moneda</strong>, y es en esos momentos de debilidad donde realmente veo cuán fuerte eres.
+
+Quiero que esta noche sientas algo más fuerte que cualquier dolor: mi amor envolviéndote. Imagíname abrazándote despacio, con ese abrazo que no asfixia, sino que protege. Ese abrazo que dice sin palabras: “Estoy aquí, no estás sola, todo va a estar bien.” En esos momentos, quiero que sientas la calidez de mi amor como un manto que te envuelve, que te da la seguridad de que todo estará bien, que cada dificultad es solo un pequeño obstáculo en el camino de nuestra vida juntos.
+
+Eres mi alegría constante, mi pensamiento favorito, mi lugar seguro. Y si hoy te duele la cabeza, si hoy tu cuerpo está débil, déjame ser tu fuerza. Si hoy la gripa te hace sentir apagada, déjame ser el calor que te abrace por dentro. Si hoy estás cansada, apóyate en mí, incluso si es desde la distancia. <strong>Te prometo que estaré aquí, siempre, dispuesto a ser tu apoyo incondicional.</strong>
+
+A veces la vida nos recuerda lo frágiles que somos con cosas pequeñas como una gripa… pero también nos recuerda lo inmenso que es el amor cuando alguien se preocupa de verdad. Y yo me preocupo por ti con cada parte de mi ser. No es un cariño superficial, no es algo pasajero. Es un amor profundo, intenso, apasionado… de esos que no se rinden ante nada. Este amor que siento por ti no es solo un sentimiento; es una promesa de estar a tu lado en los buenos y malos momentos, de ser tu refugio en la tormenta.
+
+Quiero que sepas que no amo solo tus días buenos. Amo tus días difíciles. Amo cuando estás fuerte y cuando estás vulnerable. Amo cuando sonríes y cuando necesitas que te cuiden. Amo tu risa, tu voz, tus silencios, tus sueños y hasta tus pequeñas manías. <strong>Cada faceta de ti es un regalo que atesoro profundamente</strong>. Te amo en cada una de tus versiones, porque cada una de ellas me muestra una parte de ti que es única y especial.
+
+Esta noche quiero susurrarte algo al corazón: sana tranquila, descansa sin preocupaciones. Permítete estar mal un momento, porque yo estaré aquí sosteniéndote. No tienes que ser perfecta, no tienes que ser fuerte todo el tiempo. Para mí ya eres suficiente, incluso con la nariz tapada y los ojos cansados. <strong>Tu autenticidad es lo que más amo de ti</strong>, y en este momento, lo que más deseo es que te cuides y te permitas ser vulnerable.
+
+Te amo con una intensidad que a veces me deja sin palabras. Te amo con paciencia, con ternura, con deseo y con respeto. Te amo cuando el mundo brilla y cuando parece nublado. Te amo en cada versión tuya. <strong>Este amor es un viaje, y estoy agradecido por cada paso que hemos dado juntos</strong>.
+
+Imagino el momento en que te sientas mejor y volvamos a reír como siempre, a abrazarnos fuerte, a mirarnos como si el tiempo no existiera. Y cuando eso pase, te daré todos los besos que esta gripa me está obligando a guardarme. <strong>Ese momento será un recordatorio de la fuerza de nuestro amor</strong>, de cómo hemos superado adversidades y hemos salido más fuertes.
+
+Pero mientras tanto, quiero que cierres los ojos esta noche y sientas mi presencia. Siente mis manos sosteniendo las tuyas. Siente mi corazón latiendo por ti. Siente que no importa la distancia ni el malestar, mi amor está contigo. Eres mi mujer, mi orgullo, mi dulzura infinita. Y en este jueves por la noche, mi único deseo es que descanses, que tu dolor se calme y que mañana despiertes un poquito mejor.
+
+<strong>Si pudiera pedir algo ahora mismo, pediría que tu dolor desaparezca y que en su lugar sientas paz</strong>. Pero mientras eso ocurre, te ofrezco algo más poderoso: un amor constante, firme y apasionado que no se debilita con nada. Quiero que sientas ese amor envolviéndote, como un abrazo cálido que te protege de cualquier malestar.
+
+Mientras reflexiono sobre nuestra relación, me doy cuenta de cuántos momentos hemos compartido. Desde nuestras risas hasta nuestras lágrimas, cada experiencia ha sido un ladrillo en la construcción de nuestro amor. <strong>Hemos creado un refugio juntos, un lugar donde ambos podemos ser nosotros mismos</strong>. Y aunque hoy te sientas mal, quiero que recuerdes que eso no cambia lo que somos ni lo que hemos construido.
+
+A veces, la vida se siente abrumadora, especialmente cuando nos enfrentamos a enfermedades y desafíos. Pero quiero que recuerdes que no estás sola. <strong>Tu lucha es mi lucha</strong>, y juntos podemos superar cualquier cosa. Cuando te sientas débil, recuerda que yo soy tu fortaleza. Cuando te sientas perdida, recuerda que yo soy tu guía. <strong>Siempre estaré aquí para ti, en cada paso del camino.</strong>
+
+Piensa en todas las cosas que hemos compartido, en las risas que hemos tenido y en los momentos de ternura. <strong>Esos recuerdos son el refugio al que quiero que vuelvas en los días difíciles</strong>. Cada vez que sientas que no puedes más, recuerda que hay alguien que te ama incondicionalmente, que está dispuesto a hacer lo que sea necesario para verte feliz.
+
+Hoy, mientras piensas en tus malestares, quiero que te concentres en el amor que te envío. <strong>Imagínate rodeada de luz, de calor, de todo lo bueno que mereces</strong>. Permítete sentir esa energía que fluye entre nosotros, que nos une, incluso a la distancia. Quiero que sepas que estoy aquí, que no importa lo que pase, siempre estaré a tu lado, apoyándote y amándote.
+
+Recuerdo aquellas noches en las que simplemente nos quedamos hablando hasta que el sol salía, compartiendo nuestros sueños, nuestros miedos, y nuestras esperanzas. <strong>Esos momentos son los que me hacen querer luchar por ti, por nosotros, por un futuro lleno de felicidad</strong>. Quiero que sepas que cada palabra que compartimos, cada mirada que intercambiamos, están grabadas en mi corazón.
+
+A veces, en medio del caos, es fácil olvidar lo que realmente importa. Pero tú, mi amor, eres lo más importante en mi vida. <strong>Tu bienestar, tu felicidad, tu paz</strong> son mis prioridades. Estoy aquí para recordarte que, aunque hoy te sientas mal, esto también pasará. Mañana será un nuevo día, y con él vendrá la esperanza de un mejor bienestar.
+
+Recuerda que está bien pedir ayuda. No tienes que cargar con todo el peso sola. <strong>Permítete ser vulnerable, permítete recibir amor y cuidado</strong>. Yo estoy aquí, aunque no físicamente, siempre estaré contigo en espíritu, en cada latido de mi corazón. Quiero que sepas que cada vez que me despierto, lo primero que pienso eres tú.
+
+En cada rincón de mi vida, hay un eco de tu risa, un recuerdo de tus abrazos. <strong>Tu amor es la luz que ilumina mis días más oscuros</strong> y me da la fuerza para enfrentar cualquier desafío. A veces, cuando miro por la ventana, me imagino que estás allí, disfrutando del paisaje, sonriendo con esa alegría que solo tú puedes transmitir.
+
+Cuando te sientas mejor, quiero que celebremos juntos. Quiero llevarte a nuestro lugar favorito, donde podamos reír, comer y disfrutar de la compañía del otro. <strong>Imagina nuestras risas resonando en el aire, llenando el espacio de amor y alegría</strong>. Esa imagen es lo que quiero que te acompañe mientras te recuperas.
+
+Mientras tanto, cuídate. Hidrátate, descansa y permite que tu cuerpo se recupere. <strong>Recuerda que cada día es un paso hacia la sanación</strong>, y que estoy aquí, apoyándote en cada uno de esos pasos. Quiero que sepas que estoy contigo en cada momento, en cada pensamiento, en cada latido de mi corazón.
+
+A veces, me encuentro pensando en el futuro que compartiremos. En los días soleados, en las noches estrelladas, en cada momento que pasaremos juntos. <strong>Ese futuro es lo que me motiva a seguir adelante, a luchar por ti, por nosotros</strong>. Quiero que sepas que cada día que pasa, mi amor por ti crece más y más. Eres la razón por la que sonrío, por la que me esfuerzo por ser mejor.
+
+Y aunque hoy estés enferma, quiero que sepas que eso no cambia lo que siento por ti. <strong>Tu valor y tu belleza brillan incluso en los días más oscuros</strong>. Eres una inspiración para mí, y estoy agradecido por cada momento que compartimos. Quiero que siempre recuerdes que eres amada, que eres valorada y que eres suficiente tal como eres.
+
+Así que esta noche, mientras te acurrucas en tu cama, quiero que sientas mi amor a tu alrededor. Siente cómo te envuelve, cómo te abraza y cómo te brinda consuelo. <strong>Quiero que sepas que estoy aquí, que nunca te dejaré sola en esta lucha</strong>. Mi amor por ti es un faro que siempre estará encendido, guiándote incluso en los momentos más oscuros.
+
+Cierra los ojos y respira profundamente. Imagina que cada inhalación trae consigo amor y sanación, y cada exhalación se lleva el dolor y la incomodidad. Haz esto tantas veces como necesites, y cada vez que lo hagas, piensa en mí. Piensa en nuestro amor, en lo que hemos construido juntos, en cómo hemos superado dificultades y hemos salido más fuertes.
+
+Quiero que sepas que cada vez que me despierto, lo primero que pienso eres tú. En cada rincón de mi vida, hay un eco de tu risa, un recuerdo de tus abrazos. <strong>Tu amor es la luz que ilumina mis días más oscuros</strong> y me da la fuerza para enfrentar cualquier desafío. A veces, cuando miro por la ventana, me imagino que estás allí, disfrutando del paisaje, sonriendo con esa alegría que solo tú puedes transmitir.
+
+Cuando te sientas mejor, quiero que celebremos juntos. Quiero llevarte a nuestro lugar favorito, donde podamos reír, comer y disfrutar de la compañía del otro. <strong>Imagina nuestras risas resonando en el aire, llenando el espacio de amor y alegría</strong>. Esa imagen es lo que quiero que te acompañe mientras te recuperas.
+
+Mientras tanto, cuídate. Hidrátate, descansa y permite que tu cuerpo se recupere. <strong>Recuerda que cada día es un paso hacia la sanación</strong>, y que estoy aquí, apoyándote en cada uno de esos pasos. Quiero que sepas que estoy contigo en cada momento, en cada pensamiento, en cada latido de mi corazón.
+
+A veces, me encuentro pensando en el futuro que compartiremos. En los días soleados, en las noches estrelladas, en cada momento que pasaremos juntos. <strong>Ese futuro es lo que me motiva a seguir adelante, a luchar por ti, por nosotros</strong>. Quiero que sepas que cada día que pasa, mi amor por ti crece más y más. Eres la razón por la que sonrío, por la que me esfuerzo por ser mejor.
+
+Y aunque hoy estés enferma, quiero que sepas que eso no cambia lo que siento por ti. <strong>Tu valor y tu belleza brillan incluso en los días más oscuros</strong>. Eres una inspiración para mí, y estoy agradecido por cada momento que compartimos. Quiero que siempre recuerdes que eres amada, que eres valorada y que eres suficiente tal como eres.
+
+Así que esta noche, mientras te acurrucas en tu cama, quiero que sientas mi amor a tu alrededor. Siente cómo te envuelve, cómo te abraza y cómo te brinda consuelo. <strong>Quiero que sepas que estoy aquí, que nunca te dejaré sola en esta lucha</strong>. Mi amor por ti es un faro que siempre estará encendido, guiándote incluso en los momentos más oscuros.
+
+Cierra los ojos y respira profundamente. Imagina que cada inhalación trae consigo amor y sanación, y cada exhalación se lleva el dolor y la incomodidad. Haz esto tantas veces como necesites, y cada vez que lo hagas, piensa en mí. Piensa en nuestro amor, en lo que hemos construido juntos, en cómo hemos superado dificultades y hemos salido más fuertes.
+
+Te amo con una intensidad que a veces me deja sin palabras. Te amo con paciencia, con ternura, con deseo y con respeto. Te amo cuando el mundo brilla y cuando parece nublado. Te amo en cada versión tuya. <strong>Este amor es un viaje, y estoy agradecido por cada paso que hemos dado juntos</strong>.
+
+Así que, mi vida, mientras te recuperas, quiero que te concentres en ti misma. Permítete sanar, permítete descansar y, sobre todo, permítete sentir el amor que te rodea. Aunque físicamente no esté a tu lado, mi corazón siempre estará contigo, latiendo en sincronía con el tuyo. <strong>Te amo más de lo que las palabras pueden expresar, y siempre estaré aquí para ti.</strong></P>
+<p>Con todo mi amor, esta noche y todas las noches,
+
+El hombre que te ama con el alma entera. 💖 </p>
+  <p><strong>JUAN KALETH MENDOZA PRIMERA 💜</strong></p>
+</div>
+
+
+<div class="neon-amor">
+"Mi amor, aunque la distancia nos separe en este instante y no puedo estar a tu lado como desearía, quiero que sepas que cada latido de mi corazón está contigo, enviándote toda la fuerza y el amor que tengo. Te amo más allá de lo infinito, y ese amor es un faro que ilumina incluso los días más oscuros.Sé que te sientes mal y que esta enfermedad puede parecer abrumadora, pero quiero que recuerdes que eres una luchadora increíble. Tu valentía y tu espíritu fuerte son una inspiración para mí y para todos los que te rodean. Imagina que estoy allí contigo, sosteniéndote la mano, compartiendo cada momento, cada lágrima y cada rayo de esperanza. Aunque no pueda estar físicamente, mi amor te envuelve como un cálido abrazo, y deseo que sientas mi presencia en cada rincón de tu ser.Visualiza nuestro futuro juntos: esos días llenos de risas, aventuras y sueños compartidos. Cada día que pasa es un paso más hacia la recuperación, y estoy aquí, apoyándote en cada uno de esos pasos. Quiero que sepas que estoy contigo en espíritu, enviándote energía positiva y amor incondicional. Eres el sol que ilumina mi vida, y no hay nada que desee más que verte sonreír de nuevo.Permítete sentir lo que necesites sentir, y recuerda que está bien pedir ayuda. Estoy aquí para ti, siempre. Aunque no pueda estar a tu lado ahora, mi corazón está contigo, y cada pensamiento que tengo es una oración por tu bienestar. Te amo con todo mi ser, y espero con ansias el día en que podamos estar juntos de nuevo, celebrando la vida y el amor que compartimos. Cuídate mucho, mi vida, y recuerda que estoy contigo en cada paso de este camino."
+<p><strong>💜 TE AMO MUCHÍSIMO VALERIA PETRO VILLAZON, MI VIDA ENTERA 💜</strong></p>
+</div>
+
+<div class="neon-dorado">
+"Te prometo amarte con la eternidad latiendo en mis manos, un compromiso que va más allá de las palabras y se entrelaza con cada rincón de mi ser. En cada latido de mi corazón, siento la fuerza de una devoción que trasciende el tiempo y el espacio, un amor que se expande como un vasto océano, profundo y lleno de misterios. Aunque ahora estés enfrentando momentos difíciles, quiero que sepas que estoy contigo en cada paso de este camino, y mi amor por ti se convierte en un refugio donde siempre podrás encontrar consuelo.Prometo ser tu refugio en los días grises, el faro que te guía cuando las tormentas de la vida intentan oscurecer tu camino. Seré el abrazo cálido que te envuelve en los momentos de duda y el compañero que siempre estará a tu lado, enfrentando juntos cada desafío que se nos presente. Mi amor por ti es un río interminable, fluyendo con la fuerza de nuestras esperanzas y sueños compartidos, llevando consigo la promesa de un futuro brillante, lleno de risas y momentos inolvidables.Te prometo que en cada susurro del viento, en cada estrella que brilla en el cielo, podrás escuchar la melodía de mi amor por ti, un canto eterno que resuena en el universo. Eres la razón por la que mi corazón late con fuerza y pasión, y cada día que pasa, mi compromiso contigo se fortalece aún más, convirtiéndose en un vínculo inquebrantable que nos une en esta hermosa travesía.En estos momentos en los que te sientes vulnerable, quiero que recuerdes que no estás sola. Estoy aquí, sosteniéndote en mis pensamientos, enviándote toda la energía positiva y amorosa que tengo. Te prometo que cada vez que cierres los ojos, sentirás mi amor envolviéndote como un cálido abrazo, recordándote que siempre estaré a tu lado, incluso en la distancia.Así que, en esta vida y en todas las que vendrán, te prometo amarte con la eternidad latiendo en mis manos, con un amor que no conoce límites ni fronteras. Juntos, crearemos un legado de amor que será un faro de luz en la oscuridad, un viaje sin fin donde cada paso estará impregnado de la magia de nuestra conexión única.Te prometo que siempre seré tu apoyo, tu confidente y tu mayor admirador. En cada sonrisa tuya, veré la belleza de nuestra historia, y en cada lágrima, encontraré la fuerza para seguir adelante. Eres mi musa, mi inspiración, y en cada momento compartido, mi amor por ti se renueva, floreciendo como un jardín eterno que nunca dejará de crecer.Prometo que, a pesar de las dificultades, mi amor por ti será un ancla en la tormenta, un refugio donde siempre podrás regresar. En cada amanecer, te recordaré que eres valiente, fuerte y digna de todo lo bueno que la vida tiene para ofrecer. Te prometo que estaré aquí, esperando el día en que podamos abrazarnos de nuevo, celebrar la vida y compartir cada pequeño momento que hace que nuestra historia sea tan especial.Así que, mientras enfrentas este desafío, recuerda que mi amor es un constante, un latido firme y seguro que te acompaña en cada instante. Te prometo que, sin importar lo que ocurra, mi amor por ti será eterno, un fuego que nunca se apaga, una luz que siempre brilla, y juntos superaremos cualquier obstáculo que se interponga en nuestro camino. Te amo con todo mi ser, y siempre estaré aquí, amándote con la eternidad latiendo en mis manos."
+</div>
+
+<div class="neon-rosado">
+"En cada rincón de mi ser, te llevo conmigo, y aunque la distancia nos separe en este momento, quiero que sepas que mi amor por ti es un faro eterno que nunca se apaga, iluminando incluso los días más oscuros. Eres el sueño que enciende mis noches y la razón por la que cada amanecer cobra vida. Cuando miro hacia el futuro, vislumbro un camino vibrante y lleno de posibilidades, donde cada paso que damos juntos está impregnado de la magia de nuestra conexión única, tejida con hilos de amor y esperanza.Así que, mientras enfrentas este desafío, quiero que sientas en lo más profundo de tu corazón que mi amor es un abrazo eterno que te envuelve, un susurro de aliento que te acompaña en cada instante. Te prometo que estaré aquí, firme y constante, como un roble que resiste las tormentas, esperando con ansias el día en que podamos compartir cada rayo de sol, cada risa y cada momento que hace que nuestra historia sea tan especial.Aunque ahora pueda parecer que los días son largos y las noches solitarias, quiero que sepas que mi amor por ti es un lazo inquebrantable, un hilo dorado que nos une a través del tiempo y el espacio. Te amo con una pasión que no conoce límites, un amor que florece como un jardín eterno, lleno de colores y fragancias que solo tú puedes evocar.Eres mi musa, mi inspiración, y cada latido de mi corazón lleva tu nombre grabado en él. En este viaje llamado vida, tú eres la razón por la que mi corazón late con tanta fuerza y alegría. Te prometo que siempre estaré aquí, amándote con cada latido, cada suspiro, y cada pensamiento que tengo. Porque en este vasto universo, eres mi todo, y juntos, escribiremos una historia de amor que será recordada por siempre, un relato de dos almas que se encontraron y decidieron amarse sin límites, hoy, mañana y por toda la eternidad."
+</div>
+
+</div>
+
+</body>
+</html>
